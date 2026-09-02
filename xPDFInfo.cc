@@ -33,7 +33,8 @@ static constexpr std::array fieldNames
     "Copying Allowed", "Printing Allowed", "Adding Comments Allowed", "Changing Allowed", "Encrypted", "Tagged", "Linearized", "Incremental", "Signature Field", "Outlined", "Embedded Files", "Protected",
     "Created", "Modified", "Metadata Date",
     "ID", "PDF Attributes", "Conformance", "Encryption", "Created Raw", "Modified Raw", "Metadata Date Raw",
-    "Outlines", "Text"
+    "Outlines", "Text",
+    "Number Of Pages With Fonts", "All Pages Have Images", "All Pages Have No Images", "All Pages Have Fonts", "All Pages Have No Fonts", "All Pages Have Exactly One Image"
 };
 static_assert(fieldNames.size() == FIELD_COUNT, "fieldNames size error");
 
@@ -46,7 +47,8 @@ constexpr std::array fieldTypes
     ft_boolean, ft_boolean, ft_boolean, ft_boolean, ft_boolean, ft_boolean, ft_boolean, ft_boolean, ft_boolean, ft_boolean, ft_boolean, ft_boolean,
     ft_datetime, ft_datetime, ft_datetime,
     ft_stringw, ft_stringw, ft_stringw, ft_stringw, ft_stringw, ft_stringw, ft_stringw,
-    ft_fulltext, ft_fulltext
+    ft_fulltext, ft_fulltext,
+    ft_numeric_32, ft_boolean, ft_boolean, ft_boolean, ft_boolean, ft_boolean
 };
 static_assert(fieldTypes.size() == FIELD_COUNT, "fieldTypes size error");
 

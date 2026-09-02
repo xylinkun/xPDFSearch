@@ -63,7 +63,8 @@ enum fieldIndexes
     fiCopyable, fiPrintable, fiCommentable, fiChangeable, fiEncrypted, fiTagged, fiLinearized, fiIncremental, fiSigned, fiOutlined, fiEmbeddedFiles, fiProtected,
     fiCreationDate, fiModifiedDate, fiMetadataDate,
     fiID, fiAttributesString, fiConformance, fiEncryption, fiCreationDateRaw, fiModifiedDateRaw, fiMetadataDateRaw,
-    fiOutlines, fiText
+    fiOutlines, fiText,
+    fiNumberOfPagesWithFonts, fiAllPagesHaveImages, fiAllPagesHaveNoImages, fiAllPagesHaveFonts, fiAllPagesHaveNoFonts, fiAllPagesHaveExactlyOneImage
 };
 
 /**< used to globally set the number of supported fields. */
